@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maior de 3 números</title>
+</head>
+
+<body>
+    <script>
+        var num1 = parseInt(prompt("insira um número"))
+        var num2 = parseInt(prompt("insira outro número"))
+        var num3 = parseInt(prompt("insira mais um número"))
+        var maior = num1;
+        var segundomaior = 0;
+
+        if (num2 > maior) {
+            maior = num2;
+        }else if(num2 > segundomaior){
+            segundomaior = num2;
+        }
+        
+        if (num3 > maior) {
+            maior = num3;
+        }else if(num3 > segundomaior){
+            segundomaior = num3;
+        }
+
+        if(num1 > segundomaior && num1 != maior){
+            segundomaior = num1
+        }
+
+        alert("A soma dos dois maiores é "+ (maior+segundomaior));
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maior de 3 números</title>
+</head>
+<body>
+    <script>
+        var num1 = parseInt(prompt("insira um número"))
+        var num2 = parseInt(prompt("insira outro número"))
+        var num3 = parseInt(prompt("insira mais um número"))
+        var maior = num1;
+
+        if(num2 > maior) maior = num2;
+        if(num3 > maior) maior = num3;
+
+        alert("o maior é "+maior);
+
+    </script>
+</body>
+</html>

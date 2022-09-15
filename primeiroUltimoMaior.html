@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro, ultimo e maior de quatro números</title>
+</head>
+<body>
+    <script>
+        var nums = [];
+        maior = 0
+        for(var i = 0; i<4; i++){
+            nums.push(parseInt(prompt("insira o valor numero "+ (i+1))));
+            if(nums[i]>maior){
+                maior = nums[i];
+            }
+        }
+        alert(
+            "primeiro numero "+nums[0]+"\n"+
+            "ultimo numero "+nums[nums.length-1]+"\n"+
+            "maior numero "+maior
+        )
+    </script>
+</body>
+</html>
